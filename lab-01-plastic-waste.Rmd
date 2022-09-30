@@ -23,18 +23,20 @@ plastic_waste <- read_csv("data/plastic-waste.csv")
 
 ```{r plastic-waste-continent}
 
-ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
-  geom_density()
 ggplot(data = plastic_waste,
        mapping = aes(x = plastic_waste_per_cap,
-                     color=continent))+
+                     color=continent), alpha)+
   geom_density()
 ```
 
 ### Exercise 2
 
 ```{r plastic-waste-density}
-# remove this comment and add the code for Exercise 2 here
+ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density(alpha = 0.3)
 ```
 
 ### Exercise 3
