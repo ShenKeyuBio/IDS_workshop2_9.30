@@ -89,6 +89,5 @@ plastic_waste_edit <- plastic_waste %>%
   mutate(coastal_pop_prop = coastal_pop / total_pop) %>%
   filter(plastic_waste_per_cap < 3)
 
-# remove this comment and add the code for Exercise 8 here
 ```
 
