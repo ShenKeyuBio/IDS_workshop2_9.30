@@ -48,7 +48,12 @@ ggplot(data = plastic_waste,
 *Remove this text, and add your answer for Exercise 4 here.*
 
 ```{r plastic-waste-violin}
-# remove this comment and add the code for Exercise 4 here
+ggplot(data = plastic_waste, 
+       mapping = aes(x = continent, 
+                     y = plastic_waste_per_cap,
+                     color = continent,
+                     fill = continent)) +
+  geom_violin()
 ```
 
 ### Exercise 5
