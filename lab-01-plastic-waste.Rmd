@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Plastic waste"
-author: "Keyu Shen"
+author: "Keyu Shen, Aidan"
 date: "`r Sys.Date()`"
 output: html_document
 ---
